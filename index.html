@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- end -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end -->
+
     <!-- My_CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- My_CSS_End -->
+
     <title>My Portfolio | Harry Irfandi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   </head>
@@ -38,12 +46,13 @@
       </div>
     </nav>
     <!-- End. Navbar -->
+
     <!-- Jumbotron -->
     <section class="jumbotron">
       <div class="jumbotron">
         <img src="img/smors1.jpg" alt="smors" width="200" class="rounded-circle img-thumbnail" />
         <h1 class="display-4">Harry Irfandi</h1>
-        <p class="lead">System Engineer | Lecturer</p>
+        <p class="lead"></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="white"
@@ -54,6 +63,7 @@
       </div>
     </section>
     <!-- End. Jumbotron -->
+
     <!-- About -->
     <section id="About">
       <div class="container">
@@ -63,10 +73,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui exercitationem dolor hic asperiores vero velit, repudiandae magni labore nihil.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ipsum. Suscipit perspiciatis nulla accusantium adipisci minus dolor! Illum maxime eum saepe quas et doloribus officiis!</p>
           </div>
         </div>
@@ -80,6 +90,7 @@
       </svg>
     </section>
     <!-- About..End -->
+
     <!-- Project -->
     <section id="Projects">
       <div class="container">
@@ -90,7 +101,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/devops.jpg" class="card-img-top" alt="devops" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -98,7 +109,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/netwurk.jpg" class="card-img-top" alt="netwurk-engineer" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -106,7 +117,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/webdev.jpg" class="card-img-top" alt="webdevvv" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -124,6 +135,61 @@
       </svg>
     </section>
     <!-- Project.. End -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/1.jpg" alt="pict_1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/2.jpg" alt="pict_2" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/3.jpg" alt="pict_3" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/4.jpg" alt="pict_4" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/5.jpg" alt="pict_5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/6.jpg" alt="pict_6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/7.jpg" alt="pict_7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/8.jpg" alt="pict_8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery -->
+
     <!-- Contact -->
     <section id="Contact">
       <div class="container">
@@ -170,12 +236,48 @@
       </svg>
     </section>
     <!-- Contact.. End -->
+
     <!-- footer -->
     <footer class="bg-primary text-white text-center pb-2 pt-2">
       <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/irfandyhar/" class="text-white fw-bold">Harry Irfandi</a></p>
     </footer>
     <!-- footer.. End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- end -->
+
+    <!-- GSAP Repo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- end -->
+
+    <!-- GSAP PlugIn text -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- end -->
+
+    <!-- Component for GSAP -->
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "System Engineer | WebDev | Lecturer" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
+    <!-- end -->
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwFlESFsEWeGKMkSGNkMRrtDLBtMpB5O8EbrpLAHpWKUFSEnaQg56sxG-LXCT6cfSbYSw/exec";
@@ -209,4 +311,4 @@
   </body>
 </html>
 
-<!-- next menit.. 1.03.57 -->
+<!-- next menit.. 31:32 -->
